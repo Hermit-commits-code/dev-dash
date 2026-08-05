@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 # 1. Initialize the FastAPI web server instance
 app = FastAPI()
@@ -14,6 +15,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+class FocusSession(BaseModel):
+    duration_seconds: int
+
 
 # 3. Define a basic GET endpoint at the root path
 @app.get("/")
@@ -25,10 +29,14 @@ def read_root():
 @app.get("/api/users")
 def get_database_users():
     # This represents a Python Dictionary mimicking our user record row
-    mock_db_user = {
+    return {
         "id": 1,
         "name": "Developer Joe",
         "email": "joe@idc.com",
         "role": "Full Stack Learner",
     }
-    return mock_db_user
+
+@app.post("/api/sessions")
+def save_focus_sessions(session: FocusSession):
+        print(f"🚀 Python intercepted a secure save request! Logged: {session.duration_seconds} seconds.")
+        return {"status": "success", "saved_seconds": session.duration_seconds}

@@ -93,3 +93,42 @@ button:hover {
   color: #fafafc;
   border: 1px solid #475569;
 }
+
+.btn-save {
+  background-color: #10b981;
+  color: #0f172a;
+}
+
+/* Profile Display layout formatting */
+.profile-display {
+  margin-top: 1rem;
+}
+
+.status-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.status-tag.online {
+  background-color: #064e3b;
+  color: #34d399;
+}
+
+.status-tag.offline {
+  background-color: #7f1d1d;
+  color: #f87171;
+}
+
+.user-details p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #cbd5e1;
+}
+
+.user-details strong {
+  color: #38bdf8;
+}
