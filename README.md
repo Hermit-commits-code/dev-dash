@@ -1,16 +1,25 @@
-# React + Vite
+# 🚀 DevDash // Full-Stack Developer Workspace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive, responsive development dashboard designed to help junior engineers track curriculum milestones, manage code configurations, and interface with distributed background database ecosystems.
 
-Currently, two official plugins are available:
+This project unifies all core disciplines of the FreeCodeCamp curriculum into a singular, production-ready portfolio piece.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Stack Architecture
 
-## React Compiler
+- **Frontend Presentation Layer:** React (Vite) + Responsive CSS Flexbox Engine
+- **Data Logic Controller:** Core Asynchronous JavaScript State Hooks
+- **Data Persistent Layer:** Relational Databases (SQL Cloud Seeds) _(Upcoming)_
+- **Pipeline Pipeline:** Python Backend REST APIs _(Upcoming)_
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Project Setup & Installation
 
-## Expanding the ESLint configuration
+### Running Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install project dependencies:
+   ```bash
+   npm install
+   ```
+2. Launch the local Vite development server:
+   ```bash
+   npm run dev
+   ```
